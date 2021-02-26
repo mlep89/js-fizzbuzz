@@ -7,19 +7,22 @@
 
 //Creo un ciclo for per stampare un elenco da 1 a 100
 for (var i = 1; i < 101; i++) {
-    console.log(i);
-    // //Introduco la condizione per individuare i multipli di 3
-    // if (i % 3 == 0) {
-    //     //Sostituisco il valore i con la parola Fizz;
-    //     i = "Fizz";
-    // }
-    // //Introduco la condizione per individuare i multipli di 5
-    // else if (i % 5 == 0) {
-    //     //Sostituisco il valore i con la parola Buzz
-    //     i = "Buzz";
-    // }
-    // //Introduco la condizione per individuare i multipli di 3 e 5
-    // else (i % 3 == 0 && i % 3 == 0) 
-    //     //Sostituisco il valore i con la parola FizzBuzz
-    //     i = "FizzBuzz";
+    //Introduco la condizione per individuare i multipli di 3 e 5
+    if (i % 3 == 0 && i % 5 == 0) {
+        //Stampo ogni valore multiplo di 3 e 5 con la parola FizzBuzz
+        console.log("FizzBuzz");
+    }
+    //Introduco la condizione per individuare i multipli di 3
+    else if (i % 3 == 0) {
+        //Stampo ogni valore multiplo di 3 con la parola Fizz;
+        console.log("Fizz");
+    }
+    //Introduco la condizione per individuare i multipli di 5
+    else if (i % 5 == 0) {
+        //Stampo ogni valore multiplo di 5 con la parola Buzz
+        console.log("Buzz");
+    }
+    else {
+        console.log(i);
+    }
 }
